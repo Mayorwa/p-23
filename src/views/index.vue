@@ -2,10 +2,8 @@
   <div class="uk-panel uk-overflow-hidden uk-margin-large-top uk-margin-xlarge-top@m">
     <div class="uk-container">
       <div class="uk-container uk-container-small">
-        <p class="uk-text-medium uk-text-xlarge@m uk-text-center dark:uk-text-white">My pain is constant and sharp,
-          and I do not hope for a better world for anyone.
-          In fact, I want my pain to be inflicted on others.
-          I want no one to escape.</p>
+        <p class="uk-text-medium uk-text-xlarge@m uk-text-center dark:uk-text-white">
+          a software engineering student, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
       <div class="uk-panel uk-background-primary uk-margin-large-top">
         <div class="uk-grid-collapse uk-child-width-expand@s uk-height-4xlarge space-x-2" uk-grid>

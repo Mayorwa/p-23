@@ -64,9 +64,14 @@
                   </div>
                 </div>
                 <div class="uk-navbar-center dark:uk-background-white uk-background-black dynamic-island">
+                  <svg width="28px" height="28px" viewBox="0 0 301 106" class="icon uk-text-white dark:uk-text-black">
+                    <use xlink:href="/sprite.svg#icon-b-nike"></use>
+                  </svg>
+
                   <div class="uk-width-xsmall uk-navbar-item uk-margin-remove">
                     <a class="uk-h5 dark:uk-text-black uk-text-white">8,3km</a>
                   </div>
+                  <i class="material-symbols-outlined dark:uk-text-black uk-text-white">sprint</i>
                 </div>
                 <div class="uk-navbar-right uk-flex-1 uk-flex-right">
                   <div class="uk-navbar-item uk-position-z-index uk-visible@l">

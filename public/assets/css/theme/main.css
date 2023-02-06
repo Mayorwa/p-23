@@ -9,7 +9,7 @@
  */
 @import url(https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css);
 @import url(https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css);
-@import url(https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Symbols+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp&display=swap);
 /* Import: Space Grotesk */
 @font-face {
   font-family: "Space Grotesk";
@@ -423,6 +423,7 @@
 /* '' */
 .material-icons,
 .material-icons-outlined,
+.material-symbols-outlined,
 .material-icons-round,
 .material-icons-sharp,
 .material-icons-two-tone {
@@ -437,6 +438,7 @@
 }
 :root:not(.dom-ready) .material-icons,
 :root:not(.dom-ready) .material-icons-outlined,
+:root:not(.dom-ready) .material-symbols-outlined,
 :root:not(.dom-ready) .material-icons-round,
 :root:not(.dom-ready) .material-icons-sharp,
 :root:not(.dom-ready) .material-icons-two-tone {
