@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="darkmode-trigger bottom-right" data-darkmode-toggle>
+    <label class="switch">
+      <span class="sr-only">Toggle Darkmode</span>
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <component :is="layoutComponent">
+    <router-view />
+  </component>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import defaultLayout from './components/layouts/default'
+import EmptyLayout from './components/layouts/empty'
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  computed: {
+    layoutComponent() {
+      let currentLayout = ''
+      const routeLayout = this.$route.meta.layout?.toLowerCase()
+      switch (routeLayout) {
+        case 'default':
+          currentLayout = defaultLayout
+          break
+        default:
+          currentLayout = EmptyLayout
+      }
+      return currentLayout
+    },
+  },
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
