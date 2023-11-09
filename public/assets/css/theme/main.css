@@ -10,28 +10,7 @@
 @import url(https://cdn.jsdelivr.net/npm/swiper@6.5.0/swiper-bundle.min.css);
 @import url(https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css);
 @import url(https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Symbols+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp&display=swap);
-/* Import: Space Grotesk */
-@font-face {
-  font-family: "Space Grotesk";
-  src: local("Space Grotesk Regular"),url('../../fonts/space-grotesk/SpaceGrotesk-Regular.woff');
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-  font-display: swap
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: local("Space Grotesk Medium"),url('../../fonts/space-grotesk/SpaceGrotesk-Medium.woff');
-  font-weight: 500;
-  text-rendering: optimizeLegibility;
-  font-display: swap
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: local("Space Grotesk SemiBold"),local("Space Grotesk Bold"),url('../../fonts/space-grotesk/SpaceGrotesk-Bold.woff');
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-  font-display: swap
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @font-face {
   font-family: 'brand-icons';
   src: url('../../fonts/brand-icons/brand-icons.eot');
@@ -452,10 +431,10 @@
    * Css vars font
    *//*
    * Css vars font-family
-   */--font-family-primary: "Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  --font-family-secondary: "Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  --font-family-serif: "Lato",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  --font-family-mono: "Lato",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+   */--font-family-primary: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-secondary: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-serif: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-mono: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   /*
    * Css vars font-weight
    */--font-weight-light: 300;
@@ -924,7 +903,7 @@
    * Css vars body-font
    */--body-font-typeface: var(--font-family-primary);
   --body-font-size: var(--sizes-text-medium-size);
-  --body-font-weight: 400;
+  --body-font-weight: 200;
   --body-font-spacing: normal;
   /*
    * Css vars body-color

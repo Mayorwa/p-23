@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import defaultLayout from './components/layouts/default'
-import EmptyLayout from './components/layouts/empty'
+import defaultLayout from './components/layouts/default.vue'
+import EmptyLayout from './components/layouts/empty.vue'
 export default {
   name: 'App',
   computed: {

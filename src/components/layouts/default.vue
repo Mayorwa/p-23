@@ -16,38 +16,6 @@
   </div>
 
   <div class="wrap">
-
-    <!-- Sidenavs -->
-    <div class="uni-sidenavs uk-visible@l dark:uk-text-white">
-      <div class="uk-position-left uk-flex-center uk-flex-middle">
-        <ul class="uk-subnav uk-subnav-large" style="writing-mode: vertical-lr; transform: rotate(180deg)">
-          <li><a href="#">home.</a></li>
-          <li><a href="#">studio.</a></li>
-          <li><a href="#">journey {resume}.</a></li>
-          <li><a href="#">contact.</a></li>
-        </ul>
-      </div>
-      <div class="uk-position-right uk-flex-center uk-flex-middle">
-        <ul class="uk-subnav uk-subnav-large" style="writing-mode: vertical-lr">
-          <li>
-            <a href="https://instagram.com/unistudioco">
-              <i class="brand-github-circle uk-icon-small"><span class="sr-only">Github</span></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/unistudioco">
-              <i class="brand-twitter uk-icon-small"><span class="sr-only">Twitter</span></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/unistudioco">
-              <i class="brand-instagram uk-icon-small"><span class="sr-only">Instagram</span></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <!-- Hero -->
     <div class="uni-hero uk-panel uk-overflow-hidden">
 
@@ -105,15 +73,6 @@
     <footer class="uni-cta-footer uk-section-large uk-section-2xlarge@m dark:uk-background-gray-100 dark:uk-text-white">
       <div class="uk-container">
         <div class="uk-grid uk-grid-medium@m" data-uk-grid>
-          <div class="uk-width-1-1 uk-width-expand@m">
-            <a href="#">
-              <h2 class="uk-h1 uk-heading-hero@m uk-width-medium@m">
-                drop
-                a line
-              </h2>
-              <i class="material-icons uk-icon-2xlarge">subdirectory_arrow_right</i>
-            </a>
-          </div>
           <div class="uk-width-1-2 uk-width-3-12@m">
             <ul class="uk-list uk-list-large">
               <li><a href="#">studio.</a></li>
