@@ -19,6 +19,13 @@
   font-style: normal;
   font-display: swap
 }
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('../../fonts/source-serif.woff2') format('woff2');
+  font-weight: 400;
+  text-rendering:optimizeLegibility;
+  font-display: swap
+}
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -433,7 +440,7 @@
    * Css vars font-family
    */--font-family-primary: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   --font-family-secondary: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  --font-family-serif: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-serif: "Source Serif 4", sans;
   --font-family-mono: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   /*
    * Css vars font-weight
@@ -796,9 +803,9 @@
   --sizes-button-small-text: 1rem;
   /*
    * Css vars sizes-button-medium
-   */--sizes-button-medium-height: 48px;
-  --sizes-button-medium-padding: 16px;
-  --sizes-button-medium-text: 1.15rem;
+   */--sizes-button-medium-height: 40px;
+  --sizes-button-medium-padding: 20px;
+  --sizes-button-medium-text: 14px;
   /*
    * Css vars sizes-button-large
    */--sizes-button-large-height: 56px;
@@ -933,7 +940,7 @@
    * Css vars button-font
    */--button-font-size: var(--sizes-button-medium-text);
   --button-font-typeface: var(--font-family-secondary);
-  --button-font-weight: 700;
+  --button-font-weight: 400;
   --button-font-spacing: normal;
   --button-font-transform: initial;
   /*
@@ -18313,9 +18320,6 @@ html:not(.bp-l) .uni-header.uk-dark .uni-header-navbar.uk-active {
 }
 .uk-animation-toggle-grayscale:hover img {
   filter: grayscale(0)
-}
-img {
-  filter: grayscale(1)
 }
 .uni-studio-works-item-image {
   z-index: 1
