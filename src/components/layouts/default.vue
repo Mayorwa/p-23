@@ -1,6 +1,6 @@
 <template>
   <!-- Menu modal -->
-  <div class="wrap dark:uk-background-gray-100">
+  <div class="wrap dark:uk-background-gray-200">
     <!-- Hero -->
     <div class="uni-hero uk-panel uk-overflow-hidden">
       <!-- Hero: Header -->
