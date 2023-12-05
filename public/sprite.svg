@@ -34,4 +34,8 @@
     <g id="icon-mail" fill="currentColor">
         <path d="M28,6H4A2,2,0,0,0,2,8V24a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V8A2,2,0,0,0,28,6ZM25.8,8,16,14.78,6.2,8ZM4,24V8.91l11.43,7.91a1,1,0,0,0,1.14,0L28,8.91V24Z" />
     </g>
+
+    <g id="icon-arrow-top-right" fill="currentColor">
+        <path d="M10 6L10 8 22.59 8 6 24.59 7.41 26 24 9.41 24 22 26 22 26 6 10 6z" />
+    </g>
 </svg>

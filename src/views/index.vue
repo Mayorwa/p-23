@@ -10,7 +10,7 @@
               </p>
               <div class="uk-heading-hero@m uk-h2 uk-font-serif uk-text-normal uk-text-gray-80 dark:uk-text-gray-40 uk-margin-small-top">
                 <!-- <a class="uk-link-underline"><span class="uk-text-success-60">La</span>g<span class="uk-text-success-60 uk-margin-remove">os</span></a>—<span class="uk-text-italic">based</span> -->
-                <a class="uk-link-underline">Lagos <span class="uk-text-medium uk-margin-xsmall-vertical">🇳🇬</span></a>—<span class="uk-text-italic">based</span>
+                <a class="uk-link-underline">Lagos</a> — <span class="uk-text-italic">based</span><span class="uk-margin-xsmall-vertical">🇳🇬</span>
                 <p class="uk-margin-remove">Software Engineer</p> 
               </div>
 
