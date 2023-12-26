@@ -1,7 +1,7 @@
 <template>
   <footer class="uni-cta-footer dark:uk-text-white">
     <div class="uk-container">
-      <div class="uk-padding-large-vertical uk-padding-small-horizontal">
+      <div class="uk-padding-small-horizontal">
         <div class="uk-margin-small-horizontal">
           <div class="uk-grid" data-uk-grid>
             <div class="uk-width-1-1 uk-width-auto@m uk-text-small">
@@ -72,6 +72,7 @@ export default defineComponent({
 .icon-anim{
   &:hover{
     .icon{
+      transition-timing-function: ease-in-out;
       transition: all .8s;
       transform: translate(5px, -5px);
     }
