@@ -5,8 +5,10 @@
         <div class="uk-width-1-1">
           <div class="uk-margin-3xlarge-horizontal dark:uk-text-white dark:uk-border-white uk-position-relative uk-overflow-hide">
             <div>
-              <p class="uk-heading-hero@m uk-h1 uk-text-normal uk-margin-remove">
-                Mayowa Ogunwole
+              <p class="uk-heading-hero@m uk-h1 uk-text-light uk-margin-remove glitch">
+                <span v-for="index in 12" :key="index" class="line">
+                  Mayowa Ogunwole
+                </span>
               </p>
               <div class="uk-heading-hero@m uk-h2 uk-font-serif uk-text-normal uk-text-gray-80 dark:uk-text-gray-40 uk-margin-small-top">
                 <!-- <a class="uk-link-underline"><span class="uk-text-success-60">La</span>g<span class="uk-text-success-60 uk-margin-remove">os</span></a>—<span class="uk-text-italic">based</span> -->
@@ -92,3 +94,69 @@ export default defineComponent({
   }
 })
 </script>
+<style lang="scss">
+.glitch {
+  position: relative;
+}
+
+.line {
+  &:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation:
+          clip 3000ms $i * -300ms linear infinite,
+          glitch#{$i} 500ms random(1000) * -1ms linear infinite;
+
+      @keyframes glitch#{$i} {
+        0% {
+          transform: translateX(0);
+        }
+        80% {
+          transform: translateX(0);
+          color: #fff;
+        }
+        85% {
+          transform: translateX(random(10) - 5px);
+          color: #4E9A26;
+        }
+        90% {
+          transform: translateX(random(10) - 5px);
+          color: #AC1212;
+        }
+        95% {
+          transform: translateX(random(10) - 5px);
+          color: #fff;
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}
+
+@keyframes clip {
+  0% {
+    clip-path: polygon(
+            0 100%,
+            100% 100%,
+            100% 120%,
+            0 120%
+    );
+  }
+
+  100% {
+    clip-path: polygon(
+            0 -20%,
+            100% -20%,
+            100% 0%,
+            0 0
+    );
+  }
+}
+</style>

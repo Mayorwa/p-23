@@ -6,11 +6,11 @@
           <div class="uk-navbar-top uk-flex-center">
             <div class="uk-navbar-left uk-flex-1">
               <div class="uk-panel">
-                <a class="uk-logo uk-text-large uk-navbar-item uk-margin-remove uk-text-normal" href="#">`M[O]`</a>
+                <a class="uk-logo uk-text-xlarge uk-navbar-item uk-margin-remove uk-text-normal" href="#">`M[O]`</a>
               </div>
             </div>
             <div class="uk-navbar-right uk-flex">
-              <div :class="`uk-navbar-item uk-padding-large-vertical uk-padding-small-vertical@l ${index !== menuItems.length - 1 ? 'uk-border-right uk-border-gray-70' : ''}`" v-for="(item, index) in menuItems" :key="index">
+              <div :class="`uk-navbar-item uk-padding-large-vertical uk-padding-small-vertical@l ${index === menuItems.length - 1 ? 'uk-padding-remove-right' : '' } ${index !== menuItems.length - 1 ? 'uk-border-right uk-border-gray-70' : ''}`" v-for="(item, index) in menuItems" :key="index">
                 <a class="uk-flex uk-flex-middle">
                   <IconUI :name="item.itemIcon" :title="item.itemTitle"/>
                   <span class="uk-text-small uk-margin-xsmall-left uk-text-normal uk-visible@l">{{ item.itemTitle }}</span>
