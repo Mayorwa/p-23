@@ -8,6 +8,14 @@ export default [
     },
   },
   {
+    path: '/resume',
+    component: () => import('../views/resume.vue'),
+    name: 'Resume',
+    meta: {
+      layout: 'default',
+    },
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: () => import(/* webpackChunkName: "404" */ '@/views/404.vue'),

@@ -11,10 +11,10 @@
             </div>
             <div class="uk-navbar-right uk-flex">
               <div :class="`uk-navbar-item uk-padding-large-vertical uk-padding-small-vertical@l ${index === menuItems.length - 1 ? 'uk-padding-remove-right' : '' } ${index !== menuItems.length - 1 ? 'uk-border-right uk-border-gray-70' : ''}`" v-for="(item, index) in menuItems" :key="index">
-                <a class="uk-flex uk-flex-middle">
+                <router-link :to="`/${item.itemLink}`" class="uk-flex uk-flex-middle">
                   <IconUI :name="item.itemIcon" :title="item.itemTitle"/>
                   <span class="uk-text-small uk-margin-xsmall-left uk-text-normal uk-visible@l">{{ item.itemTitle }}</span>
-                </a>
+                </router-link>
               </div>
             </div>
           </div>
@@ -31,9 +31,9 @@ export default defineComponent({
   components: { IconUI, },
   setup(){
     const menuItems = ref([
-      { itemTitle: "resume", itemIcon: "resume" },
-      { itemTitle: "works", itemIcon: "showcase" },
-      { itemTitle: "let's collaborate", itemIcon: "collab" }
+      { itemTitle: "career timeline", itemIcon: "roadmap", itemLink: "roadmap" },
+      { itemTitle: "works", itemIcon: "showcase", itemLink: "works"},
+      { itemTitle: "let's collaborate", itemIcon: "collab", itemLink: "collaborate" }
   ])
 
     return { menuItems }

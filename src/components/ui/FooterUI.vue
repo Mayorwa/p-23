@@ -8,7 +8,7 @@
               <div class="uk-panel">
                 <span class="uk-logo uk-text-large uk-navbar-item uk-margin-remove uk-padding-remove uk-text-normal icon-anim" href="#">`M[O]`
                   <a class="uk-text-small uk-border-left uk-padding-small-left uk-underline-link">
-                    hello@mayowa.design
+                    hello<span>@</span>themayorwa.com
                   </a>
                   <IconUI name="arrow-top-right" width="14px" height="14px" />
                 </span>

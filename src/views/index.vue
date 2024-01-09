@@ -5,16 +5,15 @@
         <div class="uk-width-1-1">
           <div class="uk-margin-3xlarge-horizontal dark:uk-text-white dark:uk-border-white uk-position-relative uk-overflow-hide">
             <div>
-              <p class="uk-heading-hero@m uk-h1 uk-text-light uk-margin-remove glitch">
-                <span v-for="index in 12" :key="index" class="line">
+              <p class="uk-heading-hero@m uk-h1 uk-text-light uk-margin-remove">
                   Mayowa Ogunwole
-                </span>
               </p>
               <div class="uk-heading-hero@m uk-h2 uk-font-serif uk-text-normal uk-text-gray-80 dark:uk-text-gray-40 uk-margin-small-top">
                 <!-- <a class="uk-link-underline"><span class="uk-text-success-60">La</span>g<span class="uk-text-success-60 uk-margin-remove">os</span></a>—<span class="uk-text-italic">based</span> -->
-                <a class="uk-link-underline">Lagos</a> — <span class="uk-text-italic">based</span><span class="uk-margin-xsmall-vertical">🇳🇬</span>
-                <p class="uk-margin-remove">Software/ML Engineer</p>
+                <span>Lagos, Nigeria <span class="dark:uk-text-white uk-text-black">[<IconUI :name="currentValue" width="50px" height="50px"/>]</span></span> — <span class="uk-text-italic">based</span><span class="uk-margin-xsmall-vertical">🇳🇬</span>
+                <p class="uk-margin-remove">Software Engineer.</p>
               </div>
+              <p class="uk-text-2xlarge">Frontend Engineer at <span class="uk-text-semibold">HostelWorld</span></p>
 
               <div class="uk-flex uk-margin-3xlarge-top">
                 <div class="uk-border-top uk-width-1-5">
@@ -36,41 +35,13 @@
       <p class="uk-h1@m uk-h2 uk-font-serif uk-text-light">Works</p>
     </div>
   </div>
-
-  <div class="uk-container">
-    <div class="uk-panel inner-section">
-      <div class="uk-grid">
-        <div class="uk-width-2-5">
-          <p class="uk-h1@m uk-h2 uk-font-serif uk-text-light">Resume</p>
-        </div>
-
-        <div class="uk-width-3-5 dark:uk-text-white">
-          <!-- Company -->
-          <div v-for="(company, index) in resumeDetails" :key="index">
-            <div>
-              <p class="uk-h3@m uk-h4 uk-text-semibold">
-                {{ index }}
-              </p>
-            </div>
-            <!-- Position & Tasks -->
-            <div class="uk-margin-medium-left">
-              <div class="uk-margin-medium-horizontal">
-                <div class="uk-margin-medium" v-for="(role, i) in company" :key="i">
-                  <p class="uk-text-normal uk-h5@m uk-h6 uk-margin-remove">{{ i }}</p>
-                  <span class="uk-text-small">{{ role[0] }} -  {{ role[1]}}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
+import IconUI from "@/components/ui/IconUI.vue";
 export default defineComponent({
   name: "HomePage",
+  components: {IconUI},
   setup(){
     const resumeDetails = {
       "390Labs Limited": {
@@ -90,11 +61,28 @@ export default defineComponent({
       },
     }
 
-    return { resumeDetails }
+    const iconAnimations = ['location-star', 'globe', 'location-c', 'crossroad', 'location', 'heatmap', 'location-download', 'heatmap2', 'location-building', 'map']
+
+    const currentValue = ref(iconAnimations[0])
+    let currentValueIndex = 0;
+
+    function switchValue() {
+      currentValueIndex = (currentValueIndex + 1) % iconAnimations.length;
+
+      currentValue.value = iconAnimations[currentValueIndex];
+    }
+
+   setInterval(switchValue, 500);
+
+    return { resumeDetails, currentValue }
   }
 })
 </script>
 <style lang="scss">
+.underline{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
 .glitch {
   position: relative;
 }
